@@ -1,36 +1,11 @@
-<!DOCTYPE html>
 <html>
 <body>
+<meta charset="utf-8">
 
-
-<?php
-$n = $_GET["name"];
-$sum = 0;
-$prod = 0;
-
-for ($x = 1; $x <= $n-1; $x+=1) {
-  echo "$x+";
-  $prod += $x;
-  $sum = $prod;
-}
-$sum = $prod += $n;
-print "$n=$sum<br>"
-?>
-<?php
-
-$n = $_GET["name"];
-$sum = 0;
-$prod = 1;
-
-for ($x = 1; $x <= $n-1; $x+=1) {
-  echo "$x*";
-  $prod *= $x;
-  $sum = $prod;
-}
-$sum = $prod *= $n;
-
-print "$n=$sum"
-?>  
+<form action="hw41.php" method="get">
+정수 : <input type="text" name="name"><br>
+<input type="submit">
+</form>
 
 </body>
 </html>
