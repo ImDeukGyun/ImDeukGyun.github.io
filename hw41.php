@@ -4,7 +4,7 @@
 
 
 <?php
-$n = $_POST["name"];
+$n = $_GET["name"];
 $sum = 0;
 $prod = 0;
 
@@ -18,7 +18,7 @@ print "$n=$sum<br>"
 ?>
 <?php
 
-$n = $_POST["name"];
+$n = $_GET["name"];
 $sum = 0;
 $prod = 1;
 
